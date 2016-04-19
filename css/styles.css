@@ -1,0 +1,329 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700|Roboto+Condensed:400,700);
+
+/* font-family: 'Oswald', sans-serif; */
+
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	background-color: #ccc;
+}
+
+
+/* reset */
+
+* {
+	box-sizing: border-box;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 , p , i {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-style: none;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: auto;
+	padding: 30px;
+	background-color: #FFF;
+}
+
+.cleaner {
+	clear: both;
+}
+
+
+
+/* HEADER */
+
+header {
+	border-bottom: solid 1px;
+}
+
+.info {
+	float: left;
+}
+
+.foto-ppal {
+	float: right;
+	width: 12%;
+	margin-right: 10px;
+	margin-bottom: 25px;  
+}
+
+.foto-ppal  img{
+	border-radius: 50%;
+	width: 100%;
+	border: solid 3px #04ad6f;
+}
+
+.info h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+	line-height: 27px;
+	color: #04ad6f;
+}
+
+.info h3 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	border-bottom: solid 1px #000;
+	padding-bottom: 10px;
+}
+
+.info p {
+	line-height: 15px;
+	font-size: 15px;
+}
+
+.info a {
+	color: #04ad6f;
+}
+
+.info i {
+	font-size: 20px;
+	line-height: 30px;
+	color: #04ad6f;
+	margin-right: 5px; 
+}
+
+/* ABOUT */
+
+
+.titulo {
+	margin-top: 50px;
+	font-size: 30px;
+	font-weight: 400;
+	color: #03ad6f;
+	vertical-align: middle;
+}
+
+.titulo i {
+	font-size: 23px;
+}
+
+.titulo i, .titulo span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#about p {
+	margin-top: 30px;
+	font-size: 17px;
+	padding-bottom:  50px;
+	border-bottom: solid 1px;
+}
+
+/* 
+profile . h2-i span-h2
+display:inline-block;
+	vertical-align: middle;
+	*/
+
+
+#skills  {
+	margin-top: 60px;
+	border-bottom: solid 1px;
+	padding-bottom: 60px;
+}
+
+.skill-columna {
+	float: left;
+	width: 23%;
+	margin-top: 40px;
+	text-align: center;
+	padding: 15px;
+	margin-right: 2.6666666666666667%;
+}
+
+.skill-columna.last {
+	margin-right: 0;
+}
+
+.skill-columna .herramienta {
+	color: #414042;
+	font-size: 70px;
+}
+
+.puntaje {
+	margin-top: 20px;
+	color: #04ad6f;
+}
+
+.skill-columna p {
+	margin-top: 15px;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+	margin-top: 60px;
+	border-bottom: solid 1px;
+	padding-bottom: 40px;
+}
+
+.portfolio-columna {
+	float: left;
+	width: 30%;
+	margin-top: 40px;
+	text-align: center;
+	padding: 15px;
+	margin-right: 3.33333333333%;
+}
+
+.portfolio-columna img {
+	width: 100%;
+}
+
+
+/* EDUCATION */
+
+#education, #contacto {
+	margin-top: 60px;
+	border-bottom: solid 1px;
+	padding-bottom: 60px;
+}
+
+#education ul {
+	margin-top: 40px;
+}
+
+li {
+	margin-top: 20px;
+}
+
+li h3 {
+	color: #03ad6f;
+	font-weight: 400;
+	font-size: 25px;
+}
+
+/* CONTACTO */
+
+.form-izq {
+	margin-top: 40px;
+	margin-right: 1%;
+	width: 49%;
+	float: left;
+}
+
+.form-der {
+	margin-top: 40px;
+	margin-left: 1%;
+	width: 49%;
+	float: left;
+}
+
+.campo-form {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	border: solid 1px #ccc;
+	padding-left: 15px;
+	margin-top: 20px;
+}
+
+
+.mensaje {
+	padding-top: 15px;
+	display: block;
+	width: 100%;
+	height: 190px;
+	border-radius: 5px;
+	border: solid 1px #ccc;
+	padding-left: 15px;
+	margin-top: 20px;
+}
+
+.boton-contacto input {
+	display: block;
+	background-color: #03ad6f;
+	border-style: none;
+	border-radius: 5px;
+	height: 50px;
+	width: 200px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFF;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 700px) {
+
+	.wrapper {
+		width: 96%;
+	}
+
+	nav.info {
+		text-align: center;
+		float: none
+	}
+
+	header figure {
+		display: none;
+	}
+
+	.info h3 {
+	border: none;
+	}
+
+	.info article {
+		margin-bottom: 30px;
+	}
+
+	body {
+		text-align: center;
+	}
+
+	#skills .titulo {
+		margin-bottom: 30px;
+	}
+
+	#skills .skill-columna {
+		width: 50%;
+		margin: 0;
+	}
+
+	#portfolio figure {
+		width: 100%;
+	}
+
+	.form-izq, .form-der {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 480px) {
+	#skills .skill-columna {
+		width: 100%;
+		margin-top: 30px;
+	}
+}
